@@ -1,0 +1,32 @@
+1. 코드의 버전별 관리가 용이해짐. 모든 변화가 트래킹됨.
+2. sudo apt-get install git
+3. git status
+4. git add filename
+5. git commit / git commit -m "Message"
+6. git diff
+7. ls -al 후 폴더 내에 .git 유무를 확인
+8. git 온/오프라인 겸용. SVN은 온라인 전용. git은 온라인 연결이 끊어졌을 경우에도 변경사항을 로컬에 저장해놓았다가 다시 온라인 연결이 되면 그 변화사항을 push함. SVN은 불가능.
+9. .gitignore
+10. origin이 설정되어있지 않기 때문.
+11. git log
+12. git pull
+13. git clone address
+
+14. vim = vi의 개선 버전. vi-improved
+15. .vimrc
+16. i
+17. ESC + :숫자
+18. y = 복사 / d = 잘라내기 / p = 붙여넣기
+19. Shift/Ctrl + v
+20. nyy
+21. ESC
+22. ESC + :wq
+23. ESC + :e
+
+24. Visual C++
+25. gcc -o filename.out filename.c
+26. a.out
+27. .s / .so
+28. 프로그램 실행하는 도중 필요할 때 라이브러리를 호출함으로 메모리 절약 가능
+29. 확인할 수 있다
+30. lib(라이브러리 이름).so
