@@ -17,11 +17,11 @@
 16. i
 17. ESC + :숫자
 18. y = 복사 / d = 잘라내기 / p = 붙여넣기
-19. Shift/Ctrl + v
+19*. Ctrl + v -> Shift + i
 20. nyy
 21. ESC
 22. ESC + :wq
-23. ESC + :e
+23. ESC + :r
 
 24. Visual C++
 25. gcc -o filename.out filename.c
