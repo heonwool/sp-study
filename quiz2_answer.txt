@@ -13,14 +13,17 @@
 passwd = 	실행하는 사람	  root
 apt-get = 	root		  root
 
-9. *
+9. ln -s a b => a라는 파일의 소프트 링크를 b라는 이름으로 생성.
+b를 지워도 a의 상태는 변하지 않음.
 
-10. *
+10. 
+-rwxr-wr-w 10 bob bob 172 Feb 3 00:01 a
+			      ^ 링크 카운트가 변경됨.
 
 11. 원본 삭제시에도 파일 수정 가능. 파일 시스템에 종속적이라서 다른 파일 시스템간의 호환이 불가능.
 
 12. 
-argv[0]: a.out
+argv[0]: ./a.out
 argv[1]: a
 argv[2]: b
 argv[3]: 1
@@ -68,8 +71,8 @@ count=10000
 count=10000
 
 22.
-count=10000
-count=(10000~20000 사이의 어떠한 수)
+count=(알 수 없음)
+count=(알 수 없음)
 
 23. count=(10000~80000 사이의 어떠한 수)
 
@@ -79,7 +82,7 @@ count=(10000~20000 사이의 어떠한 수)
 	pthread_mutex_init(&pd->lock, NULL); ==> mutex_lock initializing / (7)
 
 25.
-0
+count=(0~2 사이의 수)
 pthread_join() 함수가 빠져있음. 따라서 main함수가 쓰레드들을 기다려주지 않고 꺼짐.
 
 26.
