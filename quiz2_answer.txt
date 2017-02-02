@@ -1,0 +1,92 @@
+1. *
+
+2. 744
+3. d = 폴더 / l = 링크 / - = 파일
+4. chmod o+x filename / chmod o=rx filename / chmod 645
+
+5. 443
+6. umask 022
+
+7. 프로그램 소유자
+
+8. 		real user	/ effective user
+passwd = 	실행하는 사람	  root
+apt-get = 	root		  root
+
+9. *
+
+10. *
+
+11. 원본 삭제시에도 파일 수정 가능. 파일 시스템에 종속적이라서 다른 파일 시스템간의 호환이 불가능.
+
+12. 
+argv[0]: a.out
+argv[1]: a
+argv[2]: b
+argv[3]: 1
+argv[4]: 2
+argv[5]: love
+
+13. 82
+
+14. exit()은 exit handler를 실행후 프로그램을 종료. _Exit()은 exit handler 실행 없이 곧바로 프로그램을 종료/커널에게 넘겨줌.
+
+15.
+done
+1
+2
+2
+
+16.	a) fred.o libfoo.a program
+	b)
+	program : main.o libfoo.a
+		gcc –o program main.o libfoo.a
+	libfoo.a: bill.o fred.o
+		ar crv libfoo.a bill.o fred.o 
+	main.o : lib.h main.c
+		gcc –c main.c
+	bill.o : bill.c
+		gcc –c bill.c
+	fred.o : fred.c
+	gcc –c fred.c
+
+17.
+malloc = free()를 해줘야 함. heap 영역.
+alloca = free() 안해줘도 됨. stack 영역.
+
+18.
+file1
+file3
+file2
+
+19. 쓰레드
+
+20. X
+
+21.
+count=10000
+count=10000
+
+22.
+count=10000
+count=(10000~20000 사이의 어떠한 수)
+
+23. count=(10000~80000 사이의 어떠한 수)
+
+24.	a) / b)
+	pthread_mutex_lock(&pd->lock); ==> mutex_lock 걸기 / (3)
+	pthread_mutex_unlock(&pd->lock); ==> mutex_lock 해제 / (6)
+	pthread_mutex_init(&pd->lock, NULL); ==> mutex_lock initializing / (7)
+
+25.
+0
+pthread_join() 함수가 빠져있음. 따라서 main함수가 쓰레드들을 기다려주지 않고 꺼짐.
+
+26.
+프로그램이 종료되지 않음. thr_main1()과 thr_main2()에서 서로 mutex_lock을 걸어놓았기 때문에, 서로가 lock을 풀어주기만을 기다릴 것이기 때문.
+
+
+
+
+
+
