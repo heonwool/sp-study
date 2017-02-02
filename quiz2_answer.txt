@@ -4,7 +4,7 @@
 3. d = 폴더 / l = 링크 / - = 파일
 4. chmod o+x filename / chmod o=rx filename / chmod 645
 
-5. 443
+5. 452
 6. umask 022
 
 7. 프로그램 소유자
@@ -74,11 +74,11 @@ count=10000
 count=(알 수 없음)
 count=(알 수 없음)
 
-23. count=(10000~80000 사이의 어떠한 수)
+23. count=(0~80000 사이의 어떠한 수)
 
 24.	a) / b)
-	pthread_mutex_lock(&pd->lock); ==> mutex_lock 걸기 / (3)
-	pthread_mutex_unlock(&pd->lock); ==> mutex_lock 해제 / (6)
+	pthread_mutex_lock(&pd->lock); ==> mutex_lock 걸기 / (4)
+	pthread_mutex_unlock(&pd->lock); ==> mutex_lock 해제 / (5)
 	pthread_mutex_init(&pd->lock, NULL); ==> mutex_lock initializing / (7)
 
 25.
